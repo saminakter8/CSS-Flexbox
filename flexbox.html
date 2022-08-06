@@ -6,16 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
+    <script src="https://kit.fontawesome.com/a942d3cd53.js" crossorigin="anonymous"></script>
     <style>
         h2 {
             text-align: center;
-            color: white;
+            color: red;
         }
 
         .login-container {
+
             display: flex;
             justify-content: center;
             background-image: linear-gradient(to right bottom, lightgreen, green);
+            padding-bottom: 20px;
 
         }
 
@@ -27,6 +30,8 @@
 
         .login-form input,
         button {
+            border: 1px solid red;
+            border-radius: 5px;
             margin-top: 10px;
         }
 
@@ -35,28 +40,45 @@
         }
 
         .login-form button {
+            font-weight: 700;
             padding: 5px;
-            border: none;
+
             color: white;
             background-image: linear-gradient(to right bottom, rgb(240, 84, 84), red);
 
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        nav a {
+
+            color: red;
+            text-decoration: none;
+
+            margin-right: 10px;
         }
     </style>
 </head>
 
 <body>
-    <nav>
-        <span>
-            <a href="">Home</a>
-            <a href="">Contact</a>
-            <a href="">Help</a>
-            <a href="">Apply</a>
-        </span>
-        <span>
-            <a href=""></a>
-            <a href=""></a>
-        </span>
-    </nav>
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Contact</a>
+                <a href="">Help</a>
+                <a href="">Apply</a>
+            </span>
+            <span>
+                <a href=""><i class="fa-solid fa-circle-user"></i></a>
+                <a href=""><i class="fa-solid fa-right-to-bracket"></i></a>
+            </span>
+        </nav>
+    </header>
     <section class="login-container">
         <form action="" class="login-form">
             <h2>Login</h2>
